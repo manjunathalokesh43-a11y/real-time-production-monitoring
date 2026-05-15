@@ -1,6 +1,12 @@
 route:
-  receiver: default
+  receiver: slack
 
 receivers:
 
-- name: default
+- name: slack
+
+  slack_configs:
+
+  - api_url: "YOUR_WEBHOOK"
+
+    channel: "#alerts"
